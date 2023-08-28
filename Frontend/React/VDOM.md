@@ -17,6 +17,12 @@ DOM fragment 로만 필요한 작업들을 한번에 묶어서 던져줄 수 �
 
 *선언적 API란 DOM 관리를 Virtual DOM에 위임하여, 컴포넌트가 DOM을 조작할 때 다른 컴포넌트의 DOM 조작 상태를 공유할 필요가 없다는 것이다.
 
+VDOM은 더블 버퍼링 형태입니다. DOM에 마운트된 current 트리와 Render phase에서 작업 중인 workInProgress 트리로 나뉘어 있습니다. 이 workInProgress 트리는 Commit phase를 지나면 current 트리로 관리됩니다. 이렇듯 더블 버퍼링 형태이기 때문에 리액트는 workInProgress에 작업을 하다가도 언제든지 버리고 처음부터 다시 작업하거나 또는 중지시켰다가 다시 시작하는 등 작업 우선순위에 맞게 유연하게 대처할 수 있기에 사용자 경험을 최우선적으로 고려할 수 있습니다.
+
+- workInProgress가 만들어지는 방식은 current에서 자기 복제하여 서로 alternate로 참조하는 방식입니다.
+- VDOM 노드fiber는 자식을 child로 참조하는데 first child만 참조합니다. 나머지 자식들은 이전 형제가 sibling으로 참조하고 있습니다.
+- 모든 자식은 부모를 return으로 참조합니다.
+
 ### 요약
 
 Virtual DOM은 DOM fragment의 변화를 묶어서 적용한 다음 기존 DOM에 던져주는 과정을 자동화 추상화 하는 일을 하며 무조건적으로 좋은 것은 아니지만, 대체적으로 좋은 성능을 보여주고 선언적이고 상태 중심 UI 개발이 가능해졌습니다.
