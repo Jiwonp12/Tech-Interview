@@ -24,7 +24,7 @@ CDN : aws의 cloudflare를 생각하면 됨. 엔드 유저의 요청에 '물리�
 
 즉, 서버에서 처리 없이 클라이언트로 보내주기 때문에 자바스립트가 모두 다운로드 되고 실행이 끝나기 전까지 사용자는 볼 수 있는게 없습니다.
 
-[스크린샷 2023-09-04 오전 9.34.42.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/49ba5954-2cfc-48fc-8ccc-1702dd703bf5/bf405f99-013f-4651-82e9-1a45f6e01249/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-04_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_9.34.42.png)
+[스크린샷 2023-09-04 오전 9.34.42.png]([https://prod-files-secure.s3.us-west-2.amazonaws.com/49ba5954-2cfc-48fc-8ccc-1702dd703bf5/bf405f99-013f-4651-82e9-1a45f6e01249/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-04_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_9.34.42.png](https://velog.velcdn.com/images%2Fhanei100%2Fpost%2F138d8a8d-8df9-4bca-bf0f-561d01b4cc84%2Fimage.png))
 
 ### SSR 렌더링 과정입니다.
 
@@ -44,7 +44,7 @@ CDN : aws의 cloudflare를 생각하면 됨. 엔드 유저의 요청에 '물리�
 
 JS가 다운로드 되는 동안 사용자는 무언가를 보고 있을 수 있다.
 
-[Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/49ba5954-2cfc-48fc-8ccc-1702dd703bf5/2ad7aec4-61da-4175-8425-3138db934c9b/Untitled.png)
+[Untitled](https://velog.velcdn.com/images%2Fhanei100%2Fpost%2F040f9b95-70a0-49fa-8b73-76272597890c%2Fimage.png)
 
 ## SSG 와  SSR을 비교하며 설명해주세요.
 
@@ -72,3 +72,5 @@ StaticSiteGeneration 으로 Static Rendering이라고 불리는 SSG 는 서버 �
 https://www.youtube.com/watch?v=YuqB8D6eCKE
 
 https://hahahoho5915.tistory.com/52
+
+https://velog.io/@hanei100/TIL-SSR-vs-CSR-%EC%B0%A8%EC%9D%B4
