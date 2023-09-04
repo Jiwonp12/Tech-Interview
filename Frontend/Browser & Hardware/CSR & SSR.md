@@ -24,7 +24,7 @@ CDN : aws의 cloudflare를 생각하면 됨. 엔드 유저의 요청에 '물리�
 
 즉, 서버에서 처리 없이 클라이언트로 보내주기 때문에 자바스립트가 모두 다운로드 되고 실행이 끝나기 전까지 사용자는 볼 수 있는게 없습니다.
 
-https://velog.velcdn.com/images%2Fhanei100%2Fpost%2F138d8a8d-8df9-4bca-bf0f-561d01b4cc84%2Fimage.png
+[csr](https://velog.velcdn.com/images%2Fhanei100%2Fpost%2F138d8a8d-8df9-4bca-bf0f-561d01b4cc84%2Fimage.png)
 
 ### SSR 렌더링 과정입니다.
 
